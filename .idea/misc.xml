@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Learning/Android/ngay044-Fragment/ChangeOrientationFragment/app/src/main/res/layout-land/activity_main.xml" value="0.2265625" />
+        <entry key="..\:/Learning/Android/ngay044-Fragment/ChangeOrientationFragment/app/src/main/res/layout/activity_info_student.xml" value="0.24739583333333334" />
         <entry key="..\:/Learning/Android/ngay044-Fragment/ChangeOrientationFragment/app/src/main/res/layout/activity_main.xml" value="0.24739583333333334" />
+        <entry key="..\:/Learning/Android/ngay044-Fragment/ChangeOrientationFragment/app/src/main/res/layout/fragment_student_info.xml" value="0.24635416666666668" />
         <entry key="..\:/Learning/Android/ngay044-Fragment/ChangeOrientationFragment/app/src/main/res/layout/fragment_student_list.xml" value="0.24635416666666668" />
         <entry key="..\:/Learning/Android/ngay044-Fragment/ChangeOrientationFragment/app/src/main/res/layout/item_student.xml" value="0.536" />
       </map>

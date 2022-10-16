@@ -3,12 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".InfoStudentActivity">
 
     <fragment
-        android:id="@+id/fragment_danhsach"
-        android:name="com.hienqp.changeorientationfragment.ListStudentFragment"
+        android:id="@+id/fragment_chitiet"
+        android:name="com.hienqp.changeorientationfragment.InfoStudentFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -12,14 +14,28 @@ public class ListStudentFragment extends ListFragment {
     StudentAdapter studentAdapter;
     ArrayList<Student> studentArrayList;
 
+    TransferStudent transferStudent;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        transferStudent = (TransferStudent) getActivity();
+
         studentArrayList = new ArrayList<>();
         addArrayStudent();
         studentAdapter = new StudentAdapter(getActivity(), R.layout.item_student, studentArrayList);
         setListAdapter(studentAdapter);
 
         return inflater.inflate(R.layout.fragment_student_list, container, false);
+    }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        super.onListItemClick(l, v, position, id);
+
+        Toast.makeText(getActivity(), studentArrayList.get(position).getmFullname(), Toast.LENGTH_SHORT).show();
+
+        transferStudent.dataStudent(studentArrayList.get(position));
     }
 
     private void addArrayStudent() {

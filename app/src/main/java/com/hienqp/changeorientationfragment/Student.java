@@ -1,6 +1,8 @@
 package com.hienqp.changeorientationfragment;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable {
     private String mFullname;
     private int mBirthyear;
     private String mAddress;
