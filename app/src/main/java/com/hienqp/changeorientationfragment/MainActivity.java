@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements TransferStudent {
 
         Configuration configuration = getResources().getConfiguration();
 
+        // có thể thay thế bằng điều kiện infoStudentFragment.isInLayout() để kiểm tra fragment thông tin có đang tồn tại trên layout hay không (ở landscape là có, portrait là không)
         if (configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
             Intent intent = new Intent(MainActivity.this, InfoStudentActivity.class);
             intent.putExtra("infoStudent", student);
